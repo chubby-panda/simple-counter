@@ -9,11 +9,14 @@ const Count = () => {
     }
 
     return (
-        <>
+        <div className="count-container">
+            <h2>A Simple Counter</h2>
+            <div className="button-container">
+                <button onClick={minusOne} className="btn">-</button> 
+                <button onClick={() => setCount(count+1)} className="btn">+</button>
+            </div>
             <h1>{count}</h1>
-            <button onClick={minusOne} id="minus-button">-</button> 
-            <button onClick={() => setCount(count+1)} id="plus-button">+</button>
-        </>
+        </div>
     )
 }
 
